@@ -25,3 +25,21 @@ Affichage obtenu :
 >Retrait impossible.
 >Le solde du compte bancaire 1056 de Duchmol est de 950 euros.
 >Le solde du compte bancaire 2004 de Dupont est de 1500 euros.
+
+2. Définir une méthode permettant la fusion de deux comptes ayant le même titulaire.
+Cette fusion sera effectuée à l’aide de l’opérateur « + », et aura pour effet de transférer le solde du 
+compte en deuxième argument sur le compte en premier argument.
+Exemple d'utilisation de cette méthode :
+>compte3 = CompteBancaire(3987, 'Dupont', 2000)
+>compte1 + compte3
+>print(compte1)
+>print(compte3)
+>compte2 + compte3
+>print(compte2)
+>print(compte3)
+Affichage obtenu :
+>La fusion de ces comptes est impossible.
+>Le solde du compte bancaire 1056 de Duchmol est de 950 euros.
+>Le solde du compte bancaire 3987 de Dupont est de 2000 euros.Fusion effectuée.
+>Le solde du compte bancaire 2004 de Dupont est de 3500 euros.
+>Le solde du compte bancaire 3987 de Dupont est de 0 euros.
