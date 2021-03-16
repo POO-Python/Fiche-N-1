@@ -18,11 +18,11 @@ class CompteBancaire(object):
         return 'Le solde du compte bancaire ' + str(self.numero) + ' de ' + self.nom + ' est de ' +  str(self.solde) + '€'
 
     def __add__(self, other):
-        if self.nom is other.nom :
-            self = CompteBancaire(self.numero, self.nom, self.solde + other.solde)
-            other = CompteBancaire(other.numero, other.nom, 0)
-            print('Fusion effectuée.')
+        if self.nom != other.nom :
+            return ('La fusion de ces comptes est impossible.')
         else:
-            print('La fusion de ces comptes est impossible.')
+            self.solde += other.solde
+            other.solde = 0
+            print('Fusion effectuée.')
 
 
