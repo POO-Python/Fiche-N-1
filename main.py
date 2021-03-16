@@ -12,3 +12,6 @@ print(lurkin.firstname, lurkin.lastname)
 
 lurkin.changename('Bruce')
 print(lurkin.firstname, lurkin.lastname)
+
+lurkin.changename(newlastname='Lee')
+print(lurkin.firstname, lurkin.lastname)
