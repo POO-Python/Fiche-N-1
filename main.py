@@ -19,11 +19,12 @@ print(lurkin.firstname, lurkin.lastname)
 lurkin.changename(newlastname='Lee')
 print(lurkin.firstname, lurkin.lastname)
 
-#Utilisation de la classe Vecteurs
+#Utilisation de la classe Vector
 u = Vector(1, -1)
 v = Vector(2, 2)
 w = u + v
 print(w)
+
 
 #Utilisation de la classe Song
 
