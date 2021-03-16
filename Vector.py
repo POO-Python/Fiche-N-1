@@ -1,7 +1,10 @@
 class Vector(object):
     
+    #Constructeur
     def __init__(self, x, y):
         self.coords = (x, y)
+
+    #Getters
 
     @property 
     def x (self):
@@ -11,6 +14,17 @@ class Vector(object):
     def y (self):
         return self.coords[1]
 
+    #Setters
+
+    @x.setter
+    def x (self, value):
+        self.coords = (value, self.coords[1])
+
+    @y.setter
+    def y (self, value):
+        self.coords = (self.coords[0], value)
+
+    #Méthodes
 
     def __str__(self):
         return '(' + str(self.x) + ', ' +  str(self.y) + ')'
