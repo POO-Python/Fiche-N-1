@@ -35,7 +35,7 @@ class Contact(object):
 
     #Méthode
     def __str__(self):
-        return "{:30} {:30} {:10}".format(self.firstname, self.lastname, self.phonenumber)
+        return self.firstname + '  ' + self.lastname + '  ' + str(self.phonenumber)
 
 
 

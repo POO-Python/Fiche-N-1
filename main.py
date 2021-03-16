@@ -1,23 +1,17 @@
 from Contact import Contact
+from ContactPro import ContactPro
 from Vector import Vector
 from Song import Song
 
 #Utilisation de la classe Contact
 brice = Contact('Brice', 'Smith', 6942)
-obama = Contact('Barack', 'Obama', 9381)
-lurkin = Contact('Quentin', 'Lurkin')
+print(brice)
+tom = Contact('Tom', 'Brown')
+print(tom)
 
-lurkin.set_phonenumber(8293)
-print(lurkin.phonenumber)
+sam = ContactPro('Samantha', 'Wilson', 5478, 'Secretary')
+print(sam)
 
-lurkin.changename('John', 'Doe')
-print(lurkin.firstname, lurkin.lastname)
-
-lurkin.changename('Bruce')
-print(lurkin.firstname, lurkin.lastname)
-
-lurkin.changename(newlastname='Lee')
-print(lurkin.firstname, lurkin.lastname)
 
 #Utilisation de la classe Vector
 u = Vector(1, -1)
