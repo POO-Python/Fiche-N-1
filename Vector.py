@@ -1,11 +1,10 @@
 class Vector(object):
     
     def __init__(self, x, y):
-        self.x = x
-        self.y = y 
+        self.coords = (x, y)
 
     def __str__(self):
-        return '(' + str(self.x) + ', ' +  str(self.y) + ')'
+        return '(' + str(self.coords[0]) + ', ' +  str(self.coords[1]) + ')'
 
     def __add__(self, other):
-        return Vector(self.x + other.x , self.y + other.y)
+        return Vector(self.coords[0] + other.coords[0] , self.coords[1] + other.coords[1])
