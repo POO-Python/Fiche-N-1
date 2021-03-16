@@ -8,7 +8,7 @@ class Vector(object):
         return '(' + str(self.x) + ', ' +  str(self.y) + ')'
 
     def add(self, other):
-        return Vector(self.x + other.x , self.y + self.y)
+        return Vector(self.x + other.x , self.y + other.y)
 
     def __add__(self, other):
-        return Vector(self.x + other.x , self.y + self.y)
+        return Vector(self.x + other.x , self.y + other.y)

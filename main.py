@@ -22,7 +22,7 @@ print(lurkin.firstname, lurkin.lastname)
 #Utilisation de la classe Vecteurs
 u = Vector(1, -1)
 v = Vector(2, 2)
-w = u.add(v)
+w = u + v
 print(w)
 
 #Utilisation de la classe Song
