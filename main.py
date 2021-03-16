@@ -30,3 +30,6 @@ s2 = Song('The Sound of Silence', ['Paul Simon', 'Art Garfunkel'], 185)
 
 print(s2.hassinger('Stromae'))
 print(s2.hassinger('Art Garfunkel'))
+
+print(s1)
+print(s2)
