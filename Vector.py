@@ -13,7 +13,7 @@ class Vector(object):
 
 
     def __str__(self):
-        return '(' + str(self.coords[0]) + ', ' +  str(self.coords[1]) + ')'
+        return '(' + str(self.x) + ', ' +  str(self.y) + ')'
 
     def __add__(self, other):
-        return Vector(self.coords[0] + other.coords[0] , self.coords[1] + other.coords[1])
+        return Vector(self.x + other.x , self.y + other.y)
