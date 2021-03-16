@@ -1,7 +1,8 @@
 from Contact import Contact
 from Vector import Vector
+from Song import Song
 
-#Création des Contacts
+#Utilisation de la classe Contact
 brice = Contact('Brice', 'Smith', 6942)
 obama = Contact('Barack', 'Obama', 9381)
 lurkin = Contact('Quentin', 'Lurkin')
@@ -18,6 +19,14 @@ print(lurkin.firstname, lurkin.lastname)
 lurkin.changename(newlastname='Lee')
 print(lurkin.firstname, lurkin.lastname)
 
-#Creation des vecteurs
+#Utilisation de la classe Vecteurs
 u = Vector(1, -1)
 print(u)
+
+#Utilisation de la classe Song
+
+s1 = Song('Papaoutai', ['Stromae'], 232)
+s2 = Song('The Sound of Silence', ['Paul Simon', 'Art Garfunkel'], 185)
+
+print(s2.hassinger('Stromae'))
+print(s2.hassinger('Art Garfunkel'))
