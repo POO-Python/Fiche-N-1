@@ -1,5 +1,5 @@
 from Contact import Contact
-from Vector import vector
+from Vector import Vector
 
 #Création des Contacts
 brice = Contact('Brice', 'Smith', 6942)
