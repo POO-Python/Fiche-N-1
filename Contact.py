@@ -6,8 +6,8 @@ class Contact(object):
         self.lastname = lastname
         self.phonenumber = phonenumber
 
-    def set_phonenumber (self):
-        pass
+    def set_phonenumber (self, newphonenumber):
+        self.newphonenumber = newphonenumber
 
 
 
