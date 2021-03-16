@@ -22,9 +22,9 @@ class Voiture(object):
     def color(self, color):
         self.__color = color
 
-    #Méthode
+    #Méthode Accès par les getters
     def __str__(self):
-        return self.__marque + ' ' + self.__color
+        return self.marque + ' ' + self.color
 
 
 
