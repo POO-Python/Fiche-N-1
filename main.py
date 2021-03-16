@@ -4,4 +4,6 @@ brice = Contact('Brice', 'Smith', 6942)
 obama = Contact('Barack', 'Obama', 9381)
 lurkin = Contact('Quentin', 'Lurkin')
 
-print(lurkin)
+lurkin.set_phonenumber(8293)
+
+print(lurkin.phonenumber)

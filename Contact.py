@@ -7,7 +7,7 @@ class Contact(object):
         self.phonenumber = phonenumber
 
     def set_phonenumber (self, newphonenumber):
-        self.newphonenumber = newphonenumber
+        self.phonenumber = newphonenumber
 
 
 
