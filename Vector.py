@@ -7,3 +7,6 @@ class Vector(object):
     def __str__(self):
         return '(' + str(self.x) + ', ' +  str(self.y) + ')'
 
+    def add(self, other):
+        return Vector(self.x + other.x , self.y + self.y)
+
