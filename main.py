@@ -25,6 +25,8 @@ v = Vector(2, 2)
 w = u + v
 print(w)
 
+print(u.x)
+
 
 #Utilisation de la classe Song
 
