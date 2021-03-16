@@ -1,5 +1,7 @@
 from Contact import Contact
+from Vector import vector
 
+#Création des Contacts
 brice = Contact('Brice', 'Smith', 6942)
 obama = Contact('Barack', 'Obama', 9381)
 lurkin = Contact('Quentin', 'Lurkin')
@@ -15,3 +17,7 @@ print(lurkin.firstname, lurkin.lastname)
 
 lurkin.changename(newlastname='Lee')
 print(lurkin.firstname, lurkin.lastname)
+
+#Creation des vecteurs
+u = Vector(1, -1)
+print(u)
