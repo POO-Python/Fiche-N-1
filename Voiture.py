@@ -1,11 +1,9 @@
 class Voiture(object):
+    #Constructeur
     def __init__(self, marque, color):
         self.__marque = marque
         self.__color = color
     
-    def __str__(self):
-        return self.__marque + ' ' + self.__color
-
     #Getters
     @property
     def marque(self):
@@ -23,6 +21,10 @@ class Voiture(object):
     @color.setter
     def color(self, color):
         self.__color = color
+
+    #Méthode
+    def __str__(self):
+        return self.__marque + ' ' + self.__color
 
 
 
