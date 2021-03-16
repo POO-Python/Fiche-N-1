@@ -1,8 +1,8 @@
 class Voiture(object):
-    #Constructeur
+    #Constructeur appelle les setters
     def __init__(self, marque, color):
-        self.__marque = marque
-        self.__color = color
+        self.marque = marque
+        self.color = color
     
     #Getters
     @property
