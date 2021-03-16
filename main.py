@@ -12,6 +12,8 @@ print(tom)
 sam = ContactPro('Samantha', 'Wilson', 5478, 'Secretary')
 print(sam)
 
+sam.firstname = 'Sam'
+print(sam)
 
 #Utilisation de la classe Vector
 u = Vector(1, -1)
