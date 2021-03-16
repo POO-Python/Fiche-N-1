@@ -7,12 +7,10 @@ class CompteBancaire(object):
 
     def depot(self, ajout_solde):
         self.solde += ajout_solde
-        print('Depôt réussi.')
 
     def retrait(self, retrait_solde):
         if(retrait_solde < self.solde):
             self.solde -= retrait_solde
-            print('Retrait réussi.')
         else:
             print('Retrait impossible.')
 
