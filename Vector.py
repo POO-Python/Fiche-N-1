@@ -10,3 +10,5 @@ class Vector(object):
     def add(self, other):
         return Vector(self.x + other.x , self.y + self.y)
 
+    def __add__(self, other):
+        return Vector(self.x + other.x , self.y + self.y)
