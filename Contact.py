@@ -11,7 +11,6 @@ class Contact(object):
     def changename (self, newfirstname=None, newlastname=None):
         if newfirstname is not None :
             self.firstname = newfirstname
-
         if newlastname is not None:
             self.lastname = newlastname
 
