@@ -27,6 +27,8 @@ print(w)
 
 print(u.x)
 
+u.x = 42
+
 
 #Utilisation de la classe Song
 
