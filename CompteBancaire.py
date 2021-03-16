@@ -6,16 +6,18 @@ class CompteBancaire(object):
         self.solde = solde
 
     def depot(self, ajout_solde):
-        slef.solde = self.solde + ajout_solde
+        self.solde = self.solde + ajout_solde
+        return 'Depôt réussi.'
 
     def retrait(self, retrait_solde):
-        if(retrait_solde < slef.solde):
-            slef.solde = self.solde - retrait_solde
+        if(retrait_solde < self.solde):
+            self.solde = self.solde - retrait_solde
+            return 'Retrait réussi.'
         else:
-            print('Retrait impossible.')
+            return 'Retrait impossible.'
 
     def __str__ (self):
-        print('Le solde du compte bancaire {0} de {1} est de [2}', self.numero, self.nom, self.solde)
+        return 'Le solde du compte bancaire ' + str(self.numero) + ' de ' + self.nom + ' est de ' +  str(self.solde) + '€'
 
 
 
