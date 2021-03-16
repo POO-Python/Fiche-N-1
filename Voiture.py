@@ -1,26 +1,29 @@
 class Voiture(object):
-    
-    def __init__(self, marque, couleur):
+    def __init__(self, marque, color):
         self.__marque = marque
-        self.__couleur = couleur
+        self.__color = color
     
+    def __str__(self):
+        return self.__marque + ' ' + self.__color
 
+    #Getters
     @property
     def marque(self):
-        return self.__marque
+        return self.__marque 
 
     @property
-    def couleur(self):
-        return self.__couleur
+    def color(self):
+        return self.__color
 
+    #Setters
     @marque.setter
-    def marque(self, value):
-        self.__marque = value
+    def marque(self, marque):
+        self.__marque = marque
 
-    @couleur.setter
-    def couleur(self, value):
-        self.__couleur = value
+    @color.setter
+    def color(self, color):
+        self.__color = color
 
 
-    def __str__(self):
-        return self.marque + ' ' + self.couleur
+
+
