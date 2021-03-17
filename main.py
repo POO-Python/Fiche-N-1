@@ -9,5 +9,8 @@ def main():
     v1.marque = 'Skoda'
     print(v1)
 
+    nvc1= NVC('Peugeot', 'blanche', 'Jean')
+    print(nvc1)
+
 
 main()
