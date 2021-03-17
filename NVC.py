@@ -28,9 +28,13 @@ class NVC(Voiture):
     #Méthodes
 
     def __str__(self):
-        return Voiture.__str__(self) + ' ' + 'par ' + self.conducteur + ' à une vitesse de ' + str(self.vitesse) + ' m/s'
+        return Voiture.__str__(self) + ' conduite ' + 'par ' + self.conducteur + ' à une vitesse de ' + str(self.vitesse) + ' m/s'
 
     def accelerer(self, taux, duree):
-        if self.vitesse >= 0 or self.conducteur != 'personne':
-            self.vitesse = taux * duree 
+        if(self.conducteur == 'personne'):
+            print("Cette voiture n'a pas de conducteur.")
+        elif self.vitesse + taux * duree < 0:
+            self.vitesse = 0  
+        else:
+            self.vitesse += taux * duree 
 
