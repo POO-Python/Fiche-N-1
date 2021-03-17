@@ -12,6 +12,8 @@ def main():
 
     nvc1= NVC('Peugeot', 'blanche', 'Jean')
     print(nvc1)
+    nvc1.accelerer(1, 5)
+    print(nvc1)
 
 
 main()
