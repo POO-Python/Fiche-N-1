@@ -33,8 +33,8 @@ class NVC(Voiture):
     def accelerer(self, taux, duree):
         if(self.conducteur == 'personne'):
             print("Cette voiture n'a pas de conducteur.")
-        elif self.vitesse + taux * duree < 0:
-            self.vitesse = 0  
+         
         else:
             self.vitesse += taux * duree 
+            self.vitesse = max(.0, self.vitesse)
 
